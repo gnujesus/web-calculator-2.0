@@ -1,0 +1,164 @@
+*, *::before, *::after {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(320deg, #303c5b, #4f5c79, #616c86, #7a839b);
+  display: grid;
+  place-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-display: swap;
+}
+
+.btn {
+  font-size: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  border-style: solid;
+  border-color: #2e3854;
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  color: white;
+  background: #2c3651;
+  box-shadow: 2px 1px #232c45;
+}
+.btn:hover {
+  background: #404d6f;
+  box-shadow: none;
+}
+.btn:active {
+  background: #313e62;
+  box-shadow: none;
+}
+
+.screen {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  text-align: right;
+  margin-top: 20px;
+  width: 85%;
+  height: 200px;
+  font-size: 60px;
+  color: white;
+}
+
+.calc {
+  border-color: #394462;
+  border-style: solid;
+  box-shadow: 0 0 5px 1px #ef8708;
+  display: grid;
+  place-items: center;
+  height: 620px;
+  width: 300px;
+  grid-template-areas: "screen screen screen screen" "c divide times back" "seven eight nine minus" "four five six plus" "one two three equals" "percentage zero point equals";
+  background: #2c3651;
+  border-radius: 25px;
+  gap: 0px;
+}
+
+.screen {
+  grid-area: screen;
+}
+
+.c {
+  color: #ff6600;
+  grid-area: c;
+  font-size: 20px;
+}
+
+.divide {
+  color: #ff6600;
+  grid-area: divide;
+  font-size: 30px;
+}
+
+.times {
+  color: #ff6600;
+  grid-area: times;
+}
+
+.back {
+  grid-area: back;
+  color: #ff6600;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.minus {
+  color: #ff6600;
+  grid-area: minus;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.plus {
+  color: #ff6600;
+  grid-area: plus;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.equals {
+  color: white;
+  background: #ff6600;
+  box-shadow: none;
+  grid-area: equals;
+  height: 150px;
+}
+.equals:hover {
+  background: #ff8636;
+}
+.equals:active {
+  background: #d45500;
+}
+
+.percentage {
+  grid-area: percentage;
+}
+
+.zero {
+  grid-area: zero;
+}
+
+.point {
+  grid-area: point;
+}/*# sourceMappingURL=app.css.map */
