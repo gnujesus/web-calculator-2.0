@@ -49,8 +49,7 @@ let btn = {
                 break;
     
             case "←":
-                screen.textContent =  "0";
-                resetScreen();
+                screen.textContent = screen.textContent.slice(0, -1);
                 break;
 
             case "÷":
