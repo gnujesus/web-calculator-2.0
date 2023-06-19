@@ -50,6 +50,11 @@ let btn = {
     
             case "←":
                 screen.textContent = screen.textContent.slice(0, -1);
+
+                if (screen.textContent.length == 0){
+                    screen.textContent = "0"
+                }
+
                 break;
 
             case "÷":
