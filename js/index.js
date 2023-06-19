@@ -115,12 +115,17 @@ let btn = {
 
 function handleScreen(screenTextLength){
 
-    if (screen.textContent.length > 7 && screen.textContent.length < 11 ){
+    if (screen.textContent.length > 7 && screen.textContent.length < 10 ){
         screen.style.fontSize = "45px";
-    } else if (screen.textContent.length > 11 && screen.textContent.length < 15) {
+    } else if (screen.textContent.length > 10 && screen.textContent.length < 14) {
         screen.style.fontSize = "35px";
-    } else if(screen.textContent.length > 14 && screen.textContent.length < 17){
+    } else if(screen.textContent.length > 13 && screen.textContent.length < 18){
         screen.style.fontSize = "25px";
+    } else if (screen.textContent.length > 18 && screen.textContent.length < 31){
+        screen.style.fontSize = "15px";
+    } else if (screen.textContent.length > 31){
+        screen.style.fontSize = "60px";
+        screen.textContent = "Error";
     }
 
     // if (screen.textContent.length > 33){
