@@ -23,6 +23,9 @@ function handleOperation(value1, operation, value2){
         case "divide":
             result = value1 / value2;
             break;
+
+        case "percent":
+            result = (value1/ 100) * value2
     }
 }
 
