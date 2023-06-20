@@ -1,5 +1,6 @@
 let screen = document.querySelector(".screen");
 let screenFont = screen.style.fontSize;
+let history = "";
 let buffer = "";
 let operand = "";
 let result = 0;
@@ -93,6 +94,9 @@ let btn = {
                 resetScreen();
                 handleScreen(screen.textContent.length);
                 screen.textContent = result;
+                history = screen.textContent;
+                buffer = "";
+                operand = "";
                 break;
 
             case "%":
