@@ -113,6 +113,9 @@ let btn = {
             default:
                 if (screen.textContent == "0" || screen.textContent == result.toString() || screen.textContent == "Error"){
                     screen.textContent = "";
+                } else if(screen.textContent == "17.7.22"){
+                    screen.textContent = "J + Y = <3"
+                    break;
                 }
                 screen.append(button);
                 break;
