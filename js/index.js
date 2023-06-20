@@ -31,7 +31,11 @@ function handleOperation(value1, operation, value2){
             break;
 
         case "percent":
-            result = (value1/ 100) * value2
+            if (value2 == 0){
+                result = (value1/100);
+            } else{
+                result = (value1/ 100) * value2
+            }
     }
 }
 
