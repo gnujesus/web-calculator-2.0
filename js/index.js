@@ -106,8 +106,12 @@ let btn = {
                 resetScreen();
                 break;
                 
+            case ".":
+                screen.append(button);
+                break;
+
             default:
-                if (screen.textContent == 0 || screen.textContent == result || screen.textContent == "Error"){
+                if (screen.textContent == "0" || screen.textContent == result.toString() || screen.textContent == "Error"){
                     screen.textContent = "";
                 }
                 screen.append(button);
