@@ -103,6 +103,7 @@ let btn = {
                 buffer = screen.textContent;
                 screen.textContent = "0";
                 operand = "percent";
+                resetScreen();
                 break;
                 
             default:
@@ -125,15 +126,15 @@ let btn = {
     },
 }
 
-function handleScreen(screenTextLength){
+function handleScreen(){
 
     if (screen.textContent.length > 7 && screen.textContent.length < 11 ){
         screen.style.fontSize = "45px";
     } else if (screen.textContent.length > 10 && screen.textContent.length < 14) {
         screen.style.fontSize = "35px";
-    } else if(screen.textContent.length > 13 && screen.textContent.length < 19){
+    } else if(screen.textContent.length > 13 && screen.textContent.length < 21){
         screen.style.fontSize = "25px";
-    } else if (screen.textContent.length > 18 && screen.textContent.length < 32){
+    } else if (screen.textContent.length > 20 && screen.textContent.length < 32){
         screen.style.fontSize = "15px";
     } else if (screen.textContent.length > 31){
         screen.style.fontSize = "60px";
@@ -150,7 +151,7 @@ function handleScreen(screenTextLength){
 for (let i = 0; i < btn.value.length; i++) {
     btn.value[i].addEventListener("click", function (event) {
         btn.handleButtonPress(event.target.textContent);
-        handleScreen(screen.textContent.length);
+        handleScreen();
     })
 }
 
